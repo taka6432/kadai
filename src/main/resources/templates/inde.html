@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Welcome!</title>
+</head>
+<body>
+
+<div th:each="fruit:${fruits}">
+<p th:text="${fruit.id}"></p>
+<p th:text="${fruit.name}"></p>
+<p th:text="${fruit.price}"></p>
+</div>
+</body>
+</html>
